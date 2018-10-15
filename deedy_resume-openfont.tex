@@ -1,0 +1,300 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Ranjit}{Zade}{ \urlstyle{same}\href{http://www.ranjitzade.com}{ranjitzade.com} \\
+\href{mailto:ranjitczade@gmail.com}{ranjitczade@gmail.com} | +91-9049885557 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{K.I.T.S College}
+\descript{B.E. in Computer Technology}
+\descript{Nagpur University}
+\location{Ramtek, Nagpur, MH}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github: \href{https://github.com/ranjitzade}{\bf ranjitzade} \\
+LinkedIn:  \href{https://www.linkedin.com/in/ranjitzade/}{\bf ranjitzade} \\
+Stackoverflow:  \href{https://stackoverflow.com/users/3898498/ranjitzade}{\bf ranjitzade} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technology}
+\subsection{Implementation}
+Architecture (MVP/MVVM) \\
+Android Architecture Components \\
+Authentication (Facebook, Google, Instagram, Twitter) \\
+Material Designs \\
+Crashlytics \\
+Git \\
+
+
+\sectionsep
+
+\subsection{Payment Gateways}
+Paypal (BrainTree Payments) \textbullet{} PayU \\
+
+\sectionsep
+
+\subsection{Database}
+Local - SQLite (Room) \textbullet{} Realm \\
+BaaS  - Firebase \textbullet{} Parse \textbullet{} Shephertz
+
+\sectionsep
+
+\runsubsection{Google SDKs} \\
+Messaging \textbullet{} Analytics \textbullet{} Ads\\
+Geofence \textbullet{} App Indexing \\
+AppLinking \& Deeplinking
+
+\sectionsep
+
+\subsection{Popular Libraries}
+Glide \textbullet{} Picasso \textbullet{} Volley\\
+Retrofit \textbullet{} MoPub Ads \\ 
+Aztec Editor  \textbullet{} Butterknife\\
+Dagger 2 \textbullet{} EventBus\\
+DeepLinkDispatch 
+
+\sectionsep
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Java \textbullet{}   Android \textbullet{} Kotlin \textbullet{} XML \\
+RxJava \textbullet{} HTML \textbullet{} JSON \textbullet{} LaTeX\ \\ 
+\location{Over 1000 lines:}
+C \textbullet{} C++ \textbullet{} PHP Basics \\
+\location{Familiar:}
+Socket.IO
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \section{Experience}
+% \runsubsection{Parity Cube Pvt. Ltd.}
+% \descript{| Android Developer II }
+% \location{Sep 2016 - Present | Mumbai, MH}
+% \sectionsep
+
+\runsubsection{Parity Cube Pvt. Ltd.}
+\descript{| Android Developer II }
+\location{Sep 2016 – Present | Mumbai, MH}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked on 3 successfully delivered apps - DesiDime Deals \& Coupons, Zingoy, Deal Alarm.
+\item Integrated Google Play Services, Realm, PayUmoney, Firebase, Retrofit, Volley, Crashlytics \& other APIs within applications. 
+\item Full-stack developer - Wrote \& reviewed code for Android using Java \& Kotlin
+\end{tightemize}
+\sectionsep
+
+\runsubsection{QICE Technologies Pvt. Ltd}
+\descript{| Android Developer }
+\location{June 2014 – Aug 2016 | Nagpur, MH}
+\begin{tightemize}
+\item Responsible for the design, build, deployment, debug \& maintenance of multiple Android applications.
+\item Handled direct client interactions.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Selected Projects}
+\subsection{DesiDime Deals \& Coupons}
+DesiDime Deals \& Coupons App is an app to get latest coupons, discounts, deals \& offers from over 1000+ Online Shopping Stores with a powerful online community of over 12 lakh shoppers posting, reviewing \& rating the offers from various e-commerce stores \& shows the latest, active \& often hidden deals and coupons.
+
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+\sectionsep
+% \runsubsection{Cornell Phonetics Lab}
+
+\subsection{Zingoy – Cashback \& Gift Cards}
+App that pays you cashback every time you shop with it. It lets you Earn real Cash over \& above the amazing deals, offers \& discount coupons you seldom shop without. The app also have feature to buy exciting shopping Gift Cards \& can also Sell your unused vouchers \& gift cards on the Marketplace \& earn real cash.
+\sectionsep
+
+\subsection{Shemozzle}
+This app is to give the enthusiastic match reporters an easier \& more user friendly way of getting live match scores \& events to the GAA world. People at a match can use Shemozzle to input a team lineup of both teams, update live events such as scores, yellow cards, red cards, black cards \& substitutions all with the click of a few buttons.
+\sectionsep
+
+\subsection{Wanna-Eat}
+Online food ordering application developed for Arizona State University students to order food within their campus. Brilliantly designed \& secured integration of online payment mode to pay money using Braintree Payments, Paypal.
+\sectionsep
+
+\subsection{Books by Babasaheb}
+eBook reader to read \& explore books written by and on Dr. Babasaheb Ambedkar. This app was released on 14th April \& gained positive response from users. eBooks are provided from server.
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Project Management Skills} 
+\textbullet{} Develop client relationships \& coordination with the onshore team.\\
+\textbullet{} Monitoring development activities \& reporting project progress.\\
+\textbullet{} Worked as an effective coordinator between Development \& QA team.
+
+
+\end{minipage} 
+\newpage
+\begin{minipage}[t]{0.99\textwidth} 
+
+\section{Other Projects}
+\subsection{Coupons Shopping By DesiDime}
+Coupon Shopping is India’s most comprehensive app to find Coupons for Online Shopping
+It currently showcases discount codes and vouchers from over 500 Indian ecommerce stores.
+\sectionsep
+
+\subsection{Cuelinks - SDK}
+Cuelinks is a 2-minute content monetization tool for bloggers, deal site owners, coupon sites, forum owners or any publishers or in fact, any websites which send outbound traffic to online shopping, travel, finance or matrimony websites. This helps publishers monetize their content in an effective manner \& with minimal efforts from their end.
+\sectionsep
+
+\subsection{Atomz}
+Online recharge application by Atom Technologies Inc. Mumbai. This is a simple application developed with high security to perform online transaction easily.
+\sectionsep
+
+\subsection{PubApp}
+The client wanted this project as a slideshow display for the photos people take in their pubs. Users take pics \& upload on mobile application, this will then be displayed on TV as  a slideshow.
+\sectionsep
+
+\subsection{Vivid Vidarbha}
+An Android app made for people who wants to know about Vidarbha region. This was under Maharashtra tourism projects.
+\sectionsep
+
+\subsection{InstaQuote}
+An android application for users \& car vendors to quote about the cars \& their servicing. The vendors could make the quote \& forward to the users. Also users could search for nearby vendors or better quotes for their car.
+\sectionsep
+
+\subsection{Spy-App}
+The client wanted to keep parental control active in his child’s phone. So the parent (client) asked for the application that could keep track of all the phone calls, text messages, location, \& applications used \& child must not know that he is being tracked.
+\sectionsep
+
+
+\subsection{Seemeefly}
+Worked on this as a last project in Qice Solutions \& released v1.0. This is a social networking app for children.
+\sectionsep
+
+
+\subsection{Tutorjini}
+This project is a search engine for tuitions \& has more functionalities for users to get better results for any sort of classes within the area.
+\sectionsep
+\end{minipage} 
+
+\end{document}  \documentclass[]{article}
